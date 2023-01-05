@@ -1,0 +1,18 @@
+{
+    "users":[
+        {
+            "id": "1", 
+            "username": "ctdalton",
+            "name": "Curtis Dalton",
+            "email": "fakeaccount@fakeemailthatdoesn'texist.nothing",
+            "age": "0193587"
+        },
+        {
+            "id": "2",
+            "username": "tchan",
+            "name": "Thomas Chan",
+            "email": "notarealaccount@fakeemailthatdoesn'texist.nothing",
+            "age": "0329834"
+        }
+    ]
+}

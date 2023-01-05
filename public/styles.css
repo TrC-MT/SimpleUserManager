@@ -10,6 +10,12 @@ body{
     align-items: center;
 }
 
+a{
+    color: gold;
+    font-size: 10em;
+    font-style: italic;
+}
+
 h1{
     color:orange;
     font-size: 5em;
