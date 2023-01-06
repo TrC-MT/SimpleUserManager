@@ -10,10 +10,16 @@ body{
     align-items: center;
 }
 
-a{
-    color: gold;
+.firstClick{
+    background-color: darkgreen;
+    border: none;
     font-size: 10em;
     font-style: italic;
+}
+
+.hidden{
+    display: none;
+    visibility: hidden;
 }
 
 h1{
@@ -72,7 +78,9 @@ td{
     border: 1px solid gray;
 }
 
-button{
+a{
     color:gold;
     background-color: crimson;
+    border: 1px solid black;
+    border-radius: 1px;
 }

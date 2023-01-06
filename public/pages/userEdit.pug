@@ -10,11 +10,12 @@ html
      h1  EDIT USER
      form(method="post", action="/editUser")
          label(for="username")  Username:
-         input(type="text", id="username", name="username") #{user.username}
+         input(type="text", id="username", name="username", value= user.username)
          label(for="name")  Name:
-         input(type="text", id="name", name="name")  #{user.name}
+         input(type="text", id="name", name="name", value= user.name)
          label(for="email")  Email:
-         input(type="email", id="email", name="email")  #{user.email}
+         input(type="email", id="email", name="email", value= user.email)
          label(for="age")  Age:
-         input(type="number", id="age", name="age") #{user.age}
+         input(type="number", id="age", name="age", value= user.age)
+         input(class="hidden", type="number", name="id", value= user.id)
          button(type="submit", class="submitbuttons")  Submit
