@@ -9,16 +9,16 @@
 </head>
 <body>
     <h1>EDIT USER</h1>
-    <form method="post" action="/userEdit">
-            <label for="username">Username:</label>
-            <input type="text" id="username">
-            <label for="name">Name:</label>
-            <input type="text" id="name">
-            <label for="email">Email:</label>
-            <input type="email" id="email">
-            <label for="age">Age:</label>
-            <input type="number" id="age">
-        <button class="submitbuttons" type="submit">Submit</button>
+    <form method="post" action="/editUser">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age">
+        <button type="submit" class="submitbuttons">Submit</button>
     </form>
 </body>
 </html>
