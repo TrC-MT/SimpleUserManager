@@ -64,7 +64,7 @@ app.get('/userEdit/:id', (req, res) => {
     let id = req.params.id //get the id from the link
     let data = jsonfile.readFileSync(file); //Read the users.json
     let user_wanted = null;
-    data.users.forEach(user => {
+    data.users.forEach(user => { //search for the wanted users from the id
         if(user.id == id){
             user_wanted = user;
         }
@@ -96,6 +96,26 @@ app.post('/editUser', (req, res) => { //When the submit button is clicked in the
     res.redirect(`/userListing`)
 
 });
+//-----------------------------------------
+app.get('/userDelete/:id', (req, res) => {
+    let id = req.params.id //get the id from the link
+    let data = jsonfile.readFileSync(file); //Read the users.json
+    let user_wanted = null;
+    data.users.forEach(user => { //Search for the wanted user
+        if(user.id == id){
+            user_wanted = user;
+        }
+    })
+    data.users = data.users.filter(check) //data will equal the data that passes the check function
+
+    function check(currentValue){
+        return currentValue != user_wanted //return the value if it's not equal to the user_wanted
+    }
+
+    jsonfile.writeFileSync(file, data, {spaces: 2}) //Write the new data to users.json
+    res.redirect(`/userListing`)
+});
+//----
 //==================================
 
 app.listen(port, () => {
