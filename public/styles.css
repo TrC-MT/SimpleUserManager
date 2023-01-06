@@ -11,6 +11,7 @@ body{
 }
 
 .firstClick{
+    color: goldenrod;
     background-color: darkgreen;
     border: none;
     font-size: 10em;
@@ -78,7 +79,7 @@ td{
     border: 1px solid gray;
 }
 
-a{
+.button, button{
     color:gold;
     background-color: crimson;
     border: 1px solid black;

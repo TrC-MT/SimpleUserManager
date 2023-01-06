@@ -9,6 +9,7 @@ html
     head
 body 
     h1 USER LIST
+    a(href="./newUser", class="button") Add user
     table
         tr 
             th Username
@@ -25,6 +26,6 @@ body
                 td #{user.email}
                 td #{user.age}
                 td
-                    a(href='/userEdit/' + user.id) EDIT
+                    a(href='/userEdit/' + user.id, class="button") EDIT
                 td
-                    a(href='/userDelete/' + user.id) DELETE
+                    a(href='/userDelete/' + user.id, class="button") DELETE
