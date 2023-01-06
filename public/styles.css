@@ -40,7 +40,7 @@ label{
 input{
     color: #bda0dd;
     background-color:greenyellow;
-    font-size: .8em;
+    font-size: .6em;
 }
 input::placeholder{
     color:purple;

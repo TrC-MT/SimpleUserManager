@@ -19,6 +19,7 @@
   "homepage": "https://github.com/TrC-MT/SimpleUserManager#readme",
   "dependencies": {
     "express": "^4.18.2",
-    "jsonfile": "^6.1.0"
+    "jsonfile": "^6.1.0",
+    "pug": "^3.0.2"
   }
 }
